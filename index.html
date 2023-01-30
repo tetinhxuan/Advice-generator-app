@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- GG FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;700;800&family=Manrope:wght@800&family=Merriweather&family=Montserrat:wght@100;400;900&family=Outfit:wght@300;400;600&family=Plus+Jakarta+Sans:wght@500;800&family=Red+Hat+Display:wght@500;700;900&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <p>Advice # id</p>
+
+      <h1>"Press the dice to get your advice"</h1>
+
+      <picture>
+        <source
+          media="(max-width: 700px )"
+          srcset="images/pattern-divider-mobile.svg"
+        />
+        <img
+          src="images/pattern-divider-desktop.svg"
+          alt="pattern-divider-desktop  "
+        />
+      </picture>
+      <div id="dice" class="btn">
+        <img class="dice-image" src="images/icon-dice.svg" alt="icon-dice" />
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

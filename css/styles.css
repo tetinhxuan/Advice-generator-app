@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+
+  font-family: "Manrope", sans-serif;
+}
+main {
+  background-color: hsl(217, 19%, 24%);
+  width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+p {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 3rem 0 1.5rem;
+}
+h1 {
+  color: hsl(193, 38%, 86%);
+  padding: 0 20px;
+  text-align: center;
+}
+.btn {
+  padding: 15px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  bottom: -30px;
+  transform: 0.5s;
+
+  width: 24px;
+  height: 24px;
+  animation-name: parding-dice;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes parding-dice {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn:hover {
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+.btn:active {
+  padding: 20px;
+}
+
+picture {
+  margin: 2rem 0 3rem;
+}
+@media (max-width: 700px) {
+  main {
+    width: 360px;
+  }
+}
